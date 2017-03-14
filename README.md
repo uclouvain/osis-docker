@@ -13,8 +13,8 @@ You need to install docker on your computer. Follow the [docker documentation](h
 ````
 2. Initialize submodules
 ````
-# git submodules init
-# git submodules update
+# git submodule init
+# git submodule update
 ````
 3. Initialize osis-common submodule in both osis and osis-portal
 ````
