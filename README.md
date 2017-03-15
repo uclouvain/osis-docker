@@ -16,31 +16,21 @@ You need to install docker on your computer. Follow the [docker documentation](h
 # git submodule init
 # git submodule update
 ````
-3. Initialize osis-common submodule in both osis and osis-portal
-````
-# cd osis
-# git submodule init
-# git submodule update
-# cd ../osis-portal
-# git submodule init
-# git submodule update
-# cd ..
-````
-4. Build containers
+3. Build containers
 ````
 # docker-compose build
 ````
-5. start the database container and execute migrations
+4. start the database container and execute migrations
 ````
 # docker-compose up -d db
 # docker-compose run osis python manage.py migrate
 # docker-compose run osis-portal python manage.py migrate
 ````
-6. Start all containers
+5. Start all containers
 ````
 # docker-compose up -d
 ````
-7. Check that all is working
+6. Check that all is working
 
   Open a browser and go to `http://localhost:8000` and you should see Osis running.
 
