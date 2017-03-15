@@ -14,6 +14,8 @@ You need to install docker on your computer. Follow the [docker documentation](h
 2. Initialize submodules
 ````
 # git submodule update --init --remote --recursive
+# cp osis/.env.example osis/.env
+# cp osis-portal/.env.example osis-portal/.env
 ````
 3. Build containers
 ````
