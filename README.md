@@ -13,8 +13,7 @@ You need to install docker on your computer. Follow the [docker documentation](h
 ````
 2. Initialize submodules
 ````
-# git submodule init
-# git submodule update --remote
+# git submodule update --init --remote --recursive
 ````
 3. Build containers
 ````
