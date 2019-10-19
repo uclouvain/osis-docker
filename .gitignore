@@ -90,3 +90,5 @@ ENV/
 
 .DS_store
 dumps/**/*
+
+.idea
