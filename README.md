@@ -14,8 +14,8 @@ You need to install docker on your computer. Follow the [docker documentation](h
 2. Initialize submodules
 ````
 # git submodule update --init --remote --recursive
-# cp osis/.env.example osis/.env
-# cp osis-portal/.env.example osis-portal/.env
+# cp osis/.env.docker osis/.env
+# cp osis-portal/.env.docker osis-portal/.env
 ````
 3. Build containers
 ````
@@ -23,7 +23,6 @@ You need to install docker on your computer. Follow the [docker documentation](h
 ````
 4. start the database container and execute migrations
 ````
-# docker-compose up -d db
 # docker-compose run osis python manage.py migrate
 # docker-compose run osis-portal python manage.py migrate
 ````
@@ -34,6 +33,13 @@ You need to install docker on your computer. Follow the [docker documentation](h
 6. Check that all is working
 
   Open a browser and go to `http://localhost:8000` and you should see Osis running.
+  
+  
+ ## Pycharm integration
+ 
+ In PyCharm Enterprise Edition, you can use the docker-compose as project interpreter. 
+ 
+ [Follow this tutorial in JetBrains.](https://www.jetbrains.com/help/pycharm/using-docker-compose-as-a-remote-interpreter.html) 
 
 ## Appendix
 
