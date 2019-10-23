@@ -1,8 +1,8 @@
 [submodule "osis"]
 	path = osis
 	url = git@github.com:uclouvain/osis.git
-  branch = dev
+    branch = dev
 [submodule "osis-portal"]
 	path = osis-portal
 	url = git@github.com:uclouvain/osis-portal.git
-  branch = dev
+    branch = dev
