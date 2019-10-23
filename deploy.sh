@@ -3,7 +3,7 @@
 set -e
 
 echo "Init repositories"
-#git submodule update --init --remote --recursive
+git submodule update --init --remote --recursive
 
 echo "Copy docker files"
 cp -r ./osis/.env.docker ./osis/.env
